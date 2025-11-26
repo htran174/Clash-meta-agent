@@ -1,0 +1,1091 @@
+[
+  {
+    "id": 26000000,
+    "name": "Knight",
+    "maxLevel": 16,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000001,
+    "name": "Archers",
+    "maxLevel": 16,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000002,
+    "name": "Goblins",
+    "maxLevel": 16,
+    "elixir": 2,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000003,
+    "name": "Giant",
+    "maxLevel": 14,
+    "elixir": 5,
+    "is_big_tank": true,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000004,
+    "name": "P.E.K.K.A",
+    "maxLevel": 11,
+    "elixir": 7,
+    "is_big_tank": true,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000005,
+    "name": "Minions",
+    "maxLevel": 16,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000006,
+    "name": "Balloon",
+    "maxLevel": 11,
+    "elixir": 5,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 26000007,
+    "name": "Witch",
+    "maxLevel": 11,
+    "elixir": 5,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000008,
+    "name": "Barbarians",
+    "maxLevel": 16,
+    "elixir": 5,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000009,
+    "name": "Golem",
+    "maxLevel": 11,
+    "elixir": 8,
+    "is_big_tank": true,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000010,
+    "name": "Skeletons",
+    "maxLevel": 16,
+    "elixir": 1,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000011,
+    "name": "Valkyrie",
+    "maxLevel": 14,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000012,
+    "name": "Skeleton Army",
+    "maxLevel": 11,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": true,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 26000013,
+    "name": "Bomber",
+    "maxLevel": 16,
+    "elixir": 2,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 26000014,
+    "name": "Musketeer",
+    "maxLevel": 14,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000015,
+    "name": "Baby Dragon",
+    "maxLevel": 11,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000016,
+    "name": "Prince",
+    "maxLevel": 11,
+    "elixir": 5,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 26000017,
+    "name": "Wizard",
+    "maxLevel": 14,
+    "elixir": 5,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000018,
+    "name": "Mini P.E.K.K.A",
+    "maxLevel": 14,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000019,
+    "name": "Spear Goblins",
+    "maxLevel": 16,
+    "elixir": 2,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000020,
+    "name": "Giant Skeleton",
+    "maxLevel": 11,
+    "elixir": 6,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 26000021,
+    "name": "Hog Rider",
+    "maxLevel": 14,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 26000022,
+    "name": "Minion Horde",
+    "maxLevel": 16,
+    "elixir": 5,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000023,
+    "name": "Ice Wizard",
+    "maxLevel": 8,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000024,
+    "name": "Royal Giant",
+    "maxLevel": 16,
+    "elixir": 6,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 26000025,
+    "name": "Guards",
+    "maxLevel": 11,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000026,
+    "name": "Princess",
+    "maxLevel": 8,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": true,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 26000027,
+    "name": "Dark Prince",
+    "maxLevel": 11,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 26000028,
+    "name": "Three Musketeers",
+    "maxLevel": 14,
+    "elixir": 9,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000029,
+    "name": "Lava Hound",
+    "maxLevel": 8,
+    "elixir": 7,
+    "is_big_tank": true,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000030,
+    "name": "Ice Spirit",
+    "maxLevel": 16,
+    "elixir": 1,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000031,
+    "name": "Fire Spirit",
+    "maxLevel": 16,
+    "elixir": 1,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000032,
+    "name": "Miner",
+    "maxLevel": 8,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000033,
+    "name": "Sparky",
+    "maxLevel": 8,
+    "elixir": 6,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000034,
+    "name": "Bowler",
+    "maxLevel": 11,
+    "elixir": 5,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000035,
+    "name": "Lumberjack",
+    "maxLevel": 8,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000036,
+    "name": "Battle Ram",
+    "maxLevel": 14,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 26000037,
+    "name": "Inferno Dragon",
+    "maxLevel": 8,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000038,
+    "name": "Ice Golem",
+    "maxLevel": 14,
+    "elixir": 2,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000039,
+    "name": "Mega Minion",
+    "maxLevel": 14,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000040,
+    "name": "Dart Goblin",
+    "maxLevel": 14,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": true,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000041,
+    "name": "Goblin Gang",
+    "maxLevel": 16,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": true,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000042,
+    "name": "Electro Wizard",
+    "maxLevel": 8,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000043,
+    "name": "Elite Barbarians",
+    "maxLevel": 16,
+    "elixir": 6,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 26000044,
+    "name": "Hunter",
+    "maxLevel": 11,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000045,
+    "name": "Executioner",
+    "maxLevel": 11,
+    "elixir": 5,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000046,
+    "name": "Bandit",
+    "maxLevel": 8,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 26000047,
+    "name": "Royal Recruits",
+    "maxLevel": 16,
+    "elixir": 7,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 26000048,
+    "name": "Night Witch",
+    "maxLevel": 8,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000049,
+    "name": "Bats",
+    "maxLevel": 16,
+    "elixir": 2,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000050,
+    "name": "Royal Ghost",
+    "maxLevel": 8,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 26000051,
+    "name": "Ram Rider",
+    "maxLevel": 8,
+    "elixir": 5,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 26000052,
+    "name": "Zappies",
+    "maxLevel": 14,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000053,
+    "name": "Rascals",
+    "maxLevel": 16,
+    "elixir": 5,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000054,
+    "name": "Cannon Cart",
+    "maxLevel": 11,
+    "elixir": 5,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000055,
+    "name": "Mega Knight",
+    "maxLevel": 8,
+    "elixir": 7,
+    "is_big_tank": true,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 26000056,
+    "name": "Skeleton Barrel",
+    "maxLevel": 16,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": true,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 26000057,
+    "name": "Flying Machine",
+    "maxLevel": 14,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000058,
+    "name": "Wall Breakers",
+    "maxLevel": 11,
+    "elixir": 2,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 26000059,
+    "name": "Royal Hogs",
+    "maxLevel": 14,
+    "elixir": 5,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 26000060,
+    "name": "Goblin Giant",
+    "maxLevel": 11,
+    "elixir": 6,
+    "is_big_tank": true,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000061,
+    "name": "Fisherman",
+    "maxLevel": 8,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000062,
+    "name": "Magic Archer",
+    "maxLevel": 8,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000063,
+    "name": "Electro Dragon",
+    "maxLevel": 11,
+    "elixir": 5,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000064,
+    "name": "Firecracker",
+    "maxLevel": 16,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": true,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000065,
+    "name": "Mighty Miner",
+    "maxLevel": 6,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000067,
+    "name": "Elixir Golem",
+    "maxLevel": 14,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000068,
+    "name": "Battle Healer",
+    "maxLevel": 14,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000069,
+    "name": "Skeleton King",
+    "maxLevel": 6,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000072,
+    "name": "Archer Queen",
+    "maxLevel": 6,
+    "elixir": 5,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000074,
+    "name": "Golden Knight",
+    "maxLevel": 6,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 26000077,
+    "name": "Monk",
+    "maxLevel": 6,
+    "elixir": 5,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000080,
+    "name": "Skeleton Dragons",
+    "maxLevel": 16,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000083,
+    "name": "Mother Witch",
+    "maxLevel": 8,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000084,
+    "name": "Electro Spirit",
+    "maxLevel": 16,
+    "elixir": 1,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000085,
+    "name": "Electro Giant",
+    "maxLevel": 11,
+    "elixir": 7,
+    "is_big_tank": true,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000087,
+    "name": "Phoenix",
+    "maxLevel": 8,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000093,
+    "name": "Little Prince",
+    "maxLevel": 6,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000095,
+    "name": "Goblin Demolisher",
+    "maxLevel": 14,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000096,
+    "name": "Goblin Machine",
+    "maxLevel": 8,
+    "elixir": 5,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000097,
+    "name": "Suspicious Bush",
+    "maxLevel": 14,
+    "elixir": 2,
+    "is_big_tank": false,
+    "is_bait_piece": true,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 26000099,
+    "name": "Goblinstein",
+    "maxLevel": 6,
+    "elixir": 5,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000101,
+    "name": "Rune Giant",
+    "maxLevel": 11,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000102,
+    "name": "Berserker",
+    "maxLevel": 16,
+    "elixir": 2,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 26000103,
+    "name": "Boss Bandit",
+    "maxLevel": 6,
+    "elixir": 6,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": true
+  },
+  {
+    "id": 27000000,
+    "name": "Cannon",
+    "maxLevel": 16,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 27000001,
+    "name": "Goblin Hut",
+    "maxLevel": 14,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 27000002,
+    "name": "Mortar",
+    "maxLevel": 16,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 27000003,
+    "name": "Inferno Tower",
+    "maxLevel": 14,
+    "elixir": 5,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 27000004,
+    "name": "Bomb Tower",
+    "maxLevel": 14,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 27000005,
+    "name": "Barbarian Hut",
+    "maxLevel": 14,
+    "elixir": 6,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 27000006,
+    "name": "Tesla",
+    "maxLevel": 16,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 27000007,
+    "name": "Elixir Collector",
+    "maxLevel": 14,
+    "elixir": 6,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 27000008,
+    "name": "X-Bow",
+    "maxLevel": 11,
+    "elixir": 6,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 27000009,
+    "name": "Tombstone",
+    "maxLevel": 14,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 27000010,
+    "name": "Furnace",
+    "maxLevel": 14,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 27000012,
+    "name": "Goblin Cage",
+    "maxLevel": 14,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 27000013,
+    "name": "Goblin Drill",
+    "maxLevel": 11,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000000,
+    "name": "Fireball",
+    "maxLevel": 14,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000001,
+    "name": "Arrows",
+    "maxLevel": 16,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000002,
+    "name": "Rage",
+    "maxLevel": 11,
+    "elixir": 2,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000003,
+    "name": "Rocket",
+    "maxLevel": 14,
+    "elixir": 6,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000004,
+    "name": "Goblin Barrel",
+    "maxLevel": 11,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000005,
+    "name": "Freeze",
+    "maxLevel": 11,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000006,
+    "name": "Mirror",
+    "maxLevel": 11,
+    "elixir": null,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000007,
+    "name": "Lightning",
+    "maxLevel": 11,
+    "elixir": 6,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000008,
+    "name": "Zap",
+    "maxLevel": 16,
+    "elixir": 2,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000009,
+    "name": "Poison",
+    "maxLevel": 11,
+    "elixir": 4,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000010,
+    "name": "Graveyard",
+    "maxLevel": 8,
+    "elixir": 5,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000011,
+    "name": "The Log",
+    "maxLevel": 8,
+    "elixir": 2,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000012,
+    "name": "Tornado",
+    "maxLevel": 11,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000013,
+    "name": "Clone",
+    "maxLevel": 11,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000014,
+    "name": "Earthquake",
+    "maxLevel": 14,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000015,
+    "name": "Barbarian Barrel",
+    "maxLevel": 11,
+    "elixir": 2,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000016,
+    "name": "Heal Spirit",
+    "maxLevel": 14,
+    "elixir": 1,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000017,
+    "name": "Giant Snowball",
+    "maxLevel": 16,
+    "elixir": 2,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000018,
+    "name": "Royal Delivery",
+    "maxLevel": 16,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000023,
+    "name": "Void",
+    "maxLevel": 11,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000024,
+    "name": "Goblin Curse",
+    "maxLevel": 11,
+    "elixir": 2,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000025,
+    "name": "Spirit Empress",
+    "maxLevel": 8,
+    "elixir": 6,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  },
+  {
+    "id": 28000026,
+    "name": "Vines",
+    "maxLevel": 11,
+    "elixir": 3,
+    "is_big_tank": false,
+    "is_bait_piece": false,
+    "is_bridge_spam_piece": false
+  }
+]
