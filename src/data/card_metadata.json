@@ -527,7 +527,7 @@
     "maxLevel": 11,
     "elixir": 2,
     "is_big_tank": false,
-    "is_bait_piece": false,
+    "is_bait_piece": true,
     "is_bridge_spam_piece": true
   },
   {
@@ -1004,7 +1004,7 @@
     "maxLevel": 11,
     "elixir": 3,
     "is_big_tank": false,
-    "is_bait_piece": false,
+    "is_bait_piece": true,
     "is_bridge_spam_piece": false
   },
   {

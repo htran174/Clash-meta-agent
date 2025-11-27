@@ -160,6 +160,127 @@ def classify_deck(cards: List[str]) -> str:
     # =========================================
     return ARCHETYPE_HYBRID
 
+# -----------------------------------------
+# Aggregation helpers: deck-type stats
+# -----------------------------------------
+
+def _deck_type_stats_to_list(
+    stats: Dict[str, Dict[str, int]]
+) -> List[Dict[str, Any]]:
+    """
+    Turn a mapping like:
+        {
+          "cycle": {"games": 10, "wins": 6, "losses": 4, "draws": 0},
+          ...
+        }
+    into a sorted list of dicts with win_rate.
+    """
+    out: List[Dict[str, Any]] = []
+    for deck_type, s in stats.items():
+        games = s["games"]
+        wins = s["wins"]
+        losses = s["losses"]
+        draws = s["draws"]
+        win_rate = wins / games if games > 0 else 0.0
+
+        out.append(
+            {
+                "type": deck_type,
+                "games": games,
+                "wins": wins,
+                "losses": losses,
+                "draws": draws,
+                "win_rate": win_rate,
+            }
+        )
+
+    # Sort by win_rate desc, then by games desc (more games = more reliable)
+    out.sort(key=lambda x: (x["win_rate"], x["games"]), reverse=True)
+    return out
+
+def summarize_deck_types(
+    battles_normalized: List[Dict[str, Any]]
+) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
+    """
+    Given normalized battles, aggregate performance by deck archetype.
+
+    Each battle in `battles_normalized` is expected to have:
+        - "result": "win" | "loss" | "draw"
+        - "my_cards":  list of 8 card names (your deck)
+        - "opp_cards": list of 8 card names (opponent deck)
+
+    Returns:
+        (my_deck_types, opp_deck_types)
+
+    where each is a list of dicts like:
+        {
+          "type": "cycle",
+          "games": 25,
+          "wins": 14,
+          "losses": 11,
+          "draws": 0,
+          "win_rate": 0.56,
+        }
+    """
+
+    # Aggregate stats separately for you and for opponents
+    my_stats: Dict[str, Dict[str, int]] = {}
+    opp_stats: Dict[str, Dict[str, int]] = {}
+
+    def _ensure_bucket(stats: Dict[str, Dict[str, int]], key: str) -> Dict[str, int]:
+        if key not in stats:
+            stats[key] = {"games": 0, "wins": 0, "losses": 0, "draws": 0}
+        return stats[key]
+
+    for battle in battles_normalized:
+        result = battle.get("result")
+        my_cards = battle.get("my_cards") or []
+        opp_cards = battle.get("opp_cards") or []
+
+        # We expect 8 cards; if not, just skip this battle for deck-type stats
+        try:
+            if len(my_cards) == 8:
+                my_type = classify_deck(my_cards)
+            else:
+                # skip weird decks instead of raising
+                my_type = None
+        except Exception:
+            my_type = None
+
+        try:
+            if len(opp_cards) == 8:
+                opp_type = classify_deck(opp_cards)
+            else:
+                opp_type = None
+        except Exception:
+            opp_type = None
+
+        # Update "my" deck-type stats
+        if my_type is not None:
+            bucket = _ensure_bucket(my_stats, my_type)
+            bucket["games"] += 1
+            if result == "win":
+                bucket["wins"] += 1
+            elif result == "loss":
+                bucket["losses"] += 1
+            else:
+                bucket["draws"] += 1
+
+        # Update "opponent" deck-type stats (flip win/loss perspective)
+        if opp_type is not None:
+            bucket = _ensure_bucket(opp_stats, opp_type)
+            bucket["games"] += 1
+            if result == "win":
+                bucket["losses"] += 1   # opponent lost when you won
+            elif result == "loss":
+                bucket["wins"] += 1     # opponent won when you lost
+            else:
+                bucket["draws"] += 1
+
+    my_deck_types = _deck_type_stats_to_list(my_stats)
+    opp_deck_types = _deck_type_stats_to_list(opp_stats)
+
+    return my_deck_types, opp_deck_types
 
 # ---------- Aggregation over battles ----------
 
@@ -201,57 +322,3 @@ def _finalize_stats(raw: Dict[str, Dict[str, Any]]) -> List[Dict[str, Any]]:
     result.sort(key=lambda d: d["games"], reverse=True)
     return result
 
-
-def summarize_deck_types(
-    battles: List[Dict[str, Any]]
-) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
-    """
-    Given normalized battles, compute deck-type stats for:
-
-      - my_deck_types
-      - opp_deck_types
-
-    Each battle is expected to have:
-        - "my_cards": List[str]
-        - "opp_cards": List[str]
-        - "result": "win" | "loss" | "draw"
-
-    Returns:
-        (my_deck_types_list, opp_deck_types_list)
-    """
-    my_raw: Dict[str, Dict[str, Any]] = {}
-    opp_raw: Dict[str, Dict[str, Any]] = {}
-
-    for b in battles:
-        my_cards = b.get("my_cards") or []
-        opp_cards = b.get("opp_cards") or []
-        result = (b.get("result") or "").lower()
-
-        my_type = classify_deck(my_cards)
-        opp_type = classify_deck(opp_cards)
-
-        if my_type not in my_raw:
-            my_raw[my_type] = _init_type_bucket(my_type)
-        if opp_type not in opp_raw:
-            opp_raw[opp_type] = _init_type_bucket(opp_type)
-
-        my_raw[my_type]["games"] += 1
-        opp_raw[opp_type]["games"] += 1
-
-        if result == "win":
-            # I won this game
-            my_raw[my_type]["wins"] += 1
-            opp_raw[opp_type]["wins"] += 1
-        elif result == "loss":
-            # I lost this game
-            my_raw[my_type]["losses"] += 1
-            opp_raw[opp_type]["losses"] += 1
-        else:
-            # draw
-            my_raw[my_type]["draws"] += 1
-            opp_raw[opp_type]["draws"] += 1
-
-    my_types = _finalize_stats(my_raw)
-    opp_types = _finalize_stats(opp_raw)
-
-    return my_types, opp_types
