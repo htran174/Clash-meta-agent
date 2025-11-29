@@ -15,9 +15,7 @@ The agent:
 
 ---
 
-## Screenshots (add your own)
-
-> Replace these paths with your actual screenshots.
+## Graph
 
 - Phase 0 – Meta pipeline in LangGraph Studio  
   ![Phase 0 – Meta Graph](docs/images/phase0_meta_graph.png)
