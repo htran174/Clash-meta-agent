@@ -14,6 +14,16 @@ The agent:
 3. Uses an LLM-based **Q&A coach** to answer questions using both meta + personal stats.
 
 ---
+# Table of Contents
+- [Overview](#high-level-architecture)
+- [Phase 0 — Meta Analytics](#phase-0--meta-analytics)
+- [Phase 1 — User Analytics](#phase-1--user-analytics)
+- [Phase 2 — Q&A Coaching Workflow](#phase-2--qa-coaching-workflow)
+- [Combined Coach Workflow](#combined-coach-workflow)
+- [Deck Classification](#data-cleaning--deck-classification)
+- [Quickstart Guide](#quickstart-guide)
+
+---
 
 ## Diagrams
 
