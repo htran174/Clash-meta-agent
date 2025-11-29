@@ -1,8 +1,11 @@
 # Clash Royale Data Pipeline & Coaching Agent
 ## Author
 Built by **Hien Tran**
+
 Computer Science @ California State University, Fullerton  
+
 [LinkedIn](link) • [GitHub](link)
+
 **Video Demo:** [Watch on LinkedIn](link)
 
 A three-phase analytics & coaching system for **Clash Royale** built with:
