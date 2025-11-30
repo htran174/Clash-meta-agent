@@ -658,5 +658,4 @@ def build_coach_graph():
     # Loop: after answering, go back to asking a new question
     graph.add_edge("qa_answer", "ask_for_question")
 
-    # (We never hit END unless you later add a "stop" condition node)
     return graph.compile()
