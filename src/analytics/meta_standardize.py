@@ -67,7 +67,7 @@ def build_standardized_meta_table(
         # Try to keep a stable id if one exists, otherwise use index
         battle_id = battle.get("battle_id", idx)
 
-        # Classify both decks
+        # Classify both decks type
         my_type = _classify_deck(my_cards)
         opp_type = _classify_deck(opp_cards)
 

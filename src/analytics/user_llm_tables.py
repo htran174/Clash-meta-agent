@@ -32,7 +32,7 @@ def build_user_deck_summary(
           "wins": int,
           "losses": int,
           "draws": int,
-          "win_rate": float,    # fraction (0-1) from user POV
+          "win_rate": float,    
           "sample_ok": bool,    # games >= min_games_per_deck
         }
     """

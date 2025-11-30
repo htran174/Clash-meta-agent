@@ -1,8 +1,9 @@
+#src/analytics/battle_filters.py
 from typing import Any, Dict, List
 
 RANKED_MODE_ID_WHITELIST = {
     72000006,  # Ladder (Trophy Road)
-    72000464,  # Ranked1v1_NewArena2 (Path of Legends)
+    72000464,  # Ranked1v1_NewArena2 (Path of Legends or ranked)
 }
 
 

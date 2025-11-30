@@ -1,3 +1,4 @@
+#src/analytics/plots.py
 import os
 from typing import Any, Dict, List
 import matplotlib
@@ -128,7 +129,7 @@ def plot_deck_type_bar(
     ax.bar(labels, values)
     ax.set_title(title)
     ax.set_ylabel("Win Rate")
-    ax.set_ylim(0, 1)  # since win_rate is 0–1
+    ax.set_ylim(0, 1)
     ax.set_xticklabels(labels, rotation=45, ha="right")
 
     plt.tight_layout()

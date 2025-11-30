@@ -1,3 +1,4 @@
+#src/analytics/meta_builder.py
 from typing import Any, Dict, List
 
 from src.api.players import fetch_top_300_players
@@ -74,7 +75,7 @@ def build_meta_analytics(
                     f"using {len(player_slice)} for meta."
                 )
 
-        except Exception as e:  # keep Phase 0 robust; skip bad players
+        except Exception as e:
             if verbose:
                 print(f"  !! Error fetching/processing player {tag}: {e}")
             continue

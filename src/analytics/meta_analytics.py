@@ -1,3 +1,4 @@
+#src/analytics/meta_analytics.py
 from __future__ import annotations
 
 from typing import Any, Dict, List
@@ -57,7 +58,7 @@ def _build_symmetric_matchup_matrix(df: pd.DataFrame) -> Dict[str, Dict[str, Dic
         opp_type = row["opp_deck_type"]
         res = row["result"]
 
-        # POV: my deck
+        # POV: my deck (ranker)
         rows.append(
             {"deck_type": my_type, "opp_type": opp_type, "result": res}
         )

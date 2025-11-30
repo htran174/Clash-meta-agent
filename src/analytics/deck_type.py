@@ -56,7 +56,7 @@ def _precompute_deck_values(cards: List[str]) -> Dict[str, Any]:
         four_cycle = 12.0
     else:
         # avg elixir
-        avg_elixir = sum(elixirs) / 8.0  # deck = 8 cards (some safety if metadata missing)
+        avg_elixir = sum(elixirs) / 8.0  # deck = 8 cards
         # four-card cycle cost
         four_cycle = sum(sorted(elixirs)[:4])
 

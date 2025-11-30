@@ -168,7 +168,7 @@ def compute_user_deck_matchups(
         if wr >= overall_win_rate + winrate_delta:
             easy.append(row)
 
-    # Optional: sort each list by how extreme the matchup is
+    # Sort each list by how extreme the matchup is
     tough.sort(key=lambda r: (r["win_rate"], r["games"]))          # worst first
     easy.sort(key=lambda r: (r["win_rate"], r["games"]), reverse=True)  # best first
 

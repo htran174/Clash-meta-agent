@@ -28,7 +28,7 @@ def build_meta_deck_summary(
           "wins": int,
           "losses": int,
           "draws": int,
-          "win_rate": float,     # fraction (0-1)
+          "win_rate": float,     
           "sample_ok": bool,     # games >= min_games_per_type
         }
     """
