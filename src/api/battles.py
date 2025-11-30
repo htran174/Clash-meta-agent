@@ -36,7 +36,7 @@ def get_player_battlelog(player_tag: str) -> List[Dict[str, Any]]:
 
     data = cr_get(f"/players/{encoded_tag}/battlelog")
 
-    # According to the API, this endpoint returns a JSON array (list of battles)
+    #this endpoint returns a JSON array (list of battles)
     if isinstance(data, list):
         return data
 

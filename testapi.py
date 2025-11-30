@@ -3,6 +3,10 @@ from dotenv import load_dotenv
 import requests
 from langchain_openai import ChatOpenAI
 
+#--------------------------------------------------------
+#Use this file to test if the .env is set-up correctly
+#--------------------------------------------------------
+
 # ---------------------------------------------------------
 # Load .env
 # ---------------------------------------------------------

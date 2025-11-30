@@ -1,4 +1,4 @@
-#qna workflow
+# src/workflows/phase2_qna_workflow.py
 import json
 from typing import TypedDict, Dict, Any, List
 from langgraph.graph import StateGraph, START, END
@@ -341,7 +341,7 @@ def expert_answer_llm_node(state: QnAState) -> QnAState:
     context_text = state.get("context_text", "")
     context_tables = state.get("context_tables", {}) or {}
 
-    # ---- DEBUG: show what we're sending ----
+    # ---- DEBUG Blcok: show what we're sending ----
     #print("\n==========================")
     #print("EXPERT INPUT DEBUG")
     #print("==========================")
@@ -368,7 +368,9 @@ def expert_answer_llm_node(state: QnAState) -> QnAState:
             #print(f"- {name}: {type(table).__name__}")
 
     #print("\n==========================\n")
+    # ----------------------------------------------------------------------------
 
+    
     # ---- Build prompts for the expert model ----
 
     # System prompt: keep warning small, but still give best-effort advice

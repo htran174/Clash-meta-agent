@@ -1,4 +1,4 @@
-# phase2_constants.py
+# src/workflows/phase2_constants.py
 # Constants + Enums for Phase 2 (Q&A Routing)
 
 # --------------------------------------------
@@ -53,6 +53,7 @@ DEFAULT_NEEDS = {
 
 # --------------------------------------------
 # CLASSIFIER SYSTEM PROMPT
+#Goal: only get need data to save token
 # --------------------------------------------
 CLASSIFIER_SYSTEM_PROMPT = """
 You are a routing classifier for a Clash Royale analytics assistant.

@@ -195,7 +195,7 @@ def fetch_top_players_node(state: MetaState) -> Dict[str, Any]:
     """
     notes = list(state.get("notes", []))
 
-    # You modified this function to accept an optional limit
+    # Fetch top 1000 player
     top_players = fetch_top_players(limit=1000)
     notes.append(f"Fetched {len(top_players)} top players from API")
 

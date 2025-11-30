@@ -1,3 +1,4 @@
+# src/api/cr_client.py
 import os
 from typing import Any, Dict, Optional
 
@@ -44,7 +45,7 @@ def cr_get(path: str, params: Optional[Dict[str, Any]] = None) -> Dict[str, Any]
 
     return response.json()
 
-LEADERBOARD_GLOBAL_ID = 170000005  # from CR dev docs
+LEADERBOARD_GLOBAL_ID = 170000005  #Rank 1v1 ( not trophi road)
 
 
 def get_global_top_players(limit: int = 300) -> Dict[str, Any]:

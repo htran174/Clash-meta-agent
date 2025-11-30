@@ -1,3 +1,4 @@
+#langgraph
 from src.workflows.user_workflow import build_user_analytics_graph
 from langgraph.server import serve_graph
 

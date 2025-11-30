@@ -31,7 +31,7 @@ def get_openai_client() -> OpenAI:
     """
     global _client
     if _client is None:
-        # The OpenAI client will read OPENAI_API_KEY from env automatically.
+        # The OpenAI client will read OPENAI_API_KEY from env.
         _client = OpenAI()
     return _client
 
