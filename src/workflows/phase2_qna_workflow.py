@@ -593,7 +593,8 @@ def ensure_user(state: CoachState) -> CoachState:
     }
 
 def ask_for_question(state: CoachState) -> CoachState:
-    question = interrupt("What would you like to ask about your Clash performance?")
+    question = interrupt("What would you like to ask about your Clash performance?"
+                         "(Type 'stop' to finish.)")
     return {**state, "question": question}
 
 def ensure_user(state: CoachState) -> CoachState:
@@ -640,6 +641,21 @@ def qa_answer(state: CoachState) -> CoachState:
         "notes": notes,
     }
 
+
+def route_after_question(state: CoachState) -> str:
+    """
+    Decide what to do after we ask for a question.
+    If the user types 'stop' (or similar), end the graph instead of
+    going to qa_answer.
+    """
+    q = (state.get("question") or "").strip().lower()
+    if q in {"stop", "exit", "quit"}:
+        # Special label we'll map to END in build_coach_graph
+        return "end"
+    return "qa_answer"
+
+
+
 def build_coach_graph():
     graph = StateGraph(CoachState)
 
@@ -653,7 +669,16 @@ def build_coach_graph():
     graph.add_edge("ensure_meta", "ask_for_tag")
     graph.add_edge("ask_for_tag", "ensure_user")
     graph.add_edge("ensure_user", "ask_for_question")
-    graph.add_edge("ask_for_question", "qa_answer")
+
+    # NEW: conditional routing after asking the question
+    graph.add_conditional_edges(
+        "ask_for_question",
+        route_after_question,
+        {
+            "qa_answer": "qa_answer",
+            "end": END,
+        },
+    )
 
     # Loop: after answering, go back to asking a new question
     graph.add_edge("qa_answer", "ask_for_question")
